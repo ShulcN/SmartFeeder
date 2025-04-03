@@ -1,0 +1,9 @@
+*.log
+*.pyc
+build_*
+log
+install
+build
+.vscode
+venv
+yolov*
