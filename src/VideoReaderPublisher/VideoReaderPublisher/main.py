@@ -54,7 +54,7 @@ class ImagePublisher(Node):
         if image is None or image.size == 0:
             self.get_logger().error("Invalid image passed to detect_cat, skipping detection.")
             return image, False
-        image = cv2.rotate(image, cv2.ROTATE_180)
+        #image = cv2.rotate(image, cv2.ROTATE_180)
         processed_frame, detections = self.cat_detector.detect_cats(image)
         found = False
         for d in detections:

@@ -1,0 +1,8 @@
+services:
+  feeder:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      FEEDER_TOPIC_INPUT: feeder/input
+      FEEDER_TOPIC_OUTPUT: feeder/output
